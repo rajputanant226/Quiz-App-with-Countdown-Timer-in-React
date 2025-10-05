@@ -1,12 +1,26 @@
 # React + Vite
+React based MCQ Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Problem Statement:
 
-Currently, two official plugins are available:
+Design and implement a React application that displays one multiple-choice question (MCQ) per page. The application should include navigation buttons to move between the questions. The test contains a total of five questions. Each question should have four options.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requirements:
 
-## Expanding the ESLint configuration
+The application should display one question with four options per page.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Include "Next" and "Previous" buttons to navigate through the questions.
+
+The state should be maintained to know which question is currently being displayed.
+
+Ensure that users cannot navigate to the previous question if they are on the first question, and cannot navigate to the next question if they are on the last question.
+
+Use React functional components and hooks for state management.
+
+User can mark the correct option (use radio buttons).
+
+Submit button should appear at the last question only.
+
+On pressing submit button, test score should appear.
+
+Apply adequate styling to the page.
